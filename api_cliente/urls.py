@@ -18,6 +18,7 @@ from django.urls import path, include
 from rest_framework import routers
 from cliente.api.viewsets import ClienteViewset
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from rest_framework.authtoken import views
 
 
 router = routers.DefaultRouter()
@@ -26,7 +27,8 @@ urlpatterns = router.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('token/', TokenObtainPairView.as_view()),
-    path('token/refresh/', TokenRefreshView.as_view()),
+    path('tokenjwt/', TokenObtainPairView.as_view()),
+    path('tokenjwt/refresh/', TokenRefreshView.as_view()),
+    path('login/', views.obtain_auth_token),
     path('', include(router.urls))
 ]
