@@ -27,8 +27,8 @@
 ```
 ## tutorial de como autenticar o token no Postman:
 ### Exportando o arquivo:
-Primeiro copiar o arquivo .postman_collection.json. no projeto ir em .import. no .Postman. colocar a opção .raw. .text. e colar o código.
+Primeiro copiar o arquivo **postman_collection.json** no projeto ir em **import** no **Postman** colocar a opção **raw text** e colar o código.
 ### Fazendo o token funcionar:
-depois de ir na aba login e colocar o usuario e senha, é necessário seguir os seguintes passos, copiar o .token. , no folder .cliente. 
-clicar nos três pontinhos e em seguida em .editar. ir na opção de .Pre-request. .Scripts. e colar o token no ."Authorization:. .Token.
+depois de ir na aba login e colocar o usuario e senha, é necessário seguir os seguintes passos, copiar o **token** , no folder **cliente** 
+clicar nos três pontinhos e em seguida em **editar** ir na opção de **Pre-request cripts** e colar o token no **"Authorization: Token ..."**. 
 
