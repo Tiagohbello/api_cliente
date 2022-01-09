@@ -41,7 +41,12 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "{\r\n    \"nome\": \"Mônica\",\r\n    \"endereco\": \"Rua Oscar Pinto\",\r\n    \"telefone\": \"99878544\",\r\n    \"data_nascimento\": \"1969-09-21\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": {
 							"raw": "http://127.0.0.1:8000/cliente/",
@@ -66,8 +71,17 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Gustavo\",\r\n    \"endereco\": \"Rua Oscar Pinto\",\r\n    \"telefone\": 99878544,\r\n    \"data_nascimento\": \"1969-09-21\",\r\n    \"data_cliente\": \"2022-01-08\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/cliente/",
+							"raw": "http://127.0.0.1:8000/cliente/a128b72e-e94a-4a77-871d-8797f913627d/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -78,6 +92,7 @@
 							"port": "8000",
 							"path": [
 								"cliente",
+								"a128b72e-e94a-4a77-871d-8797f913627d",
 								""
 							]
 						}
@@ -90,7 +105,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/cliente/",
+							"raw": "http://127.0.0.1:8000/cliente/a128b72e-e94a-4a77-871d-8797f913627d/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -101,6 +116,7 @@
 							"port": "8000",
 							"path": [
 								"cliente",
+								"a128b72e-e94a-4a77-871d-8797f913627d",
 								""
 							]
 						}
@@ -148,7 +164,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api-token-auth/",
+					"raw": "http://127.0.0.1:8000/login/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -158,7 +174,7 @@
 					],
 					"port": "8000",
 					"path": [
-						"api-token-auth",
+						"login",
 						""
 					]
 				}
