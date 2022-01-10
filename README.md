@@ -1,6 +1,6 @@
 ﻿# api_cliente
  
-##Introdução ao Projeto:
+## Introdução ao Projeto:
  O projeto tem como objetivo criar uma API de cadastro de clientes protegida por login de autenticação. Criado usando apenas Django e Django Rest Framework.
 
 ## Como rodar o projeto:
